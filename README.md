@@ -4,6 +4,8 @@
 
 Automated bot that fetches music AI papers from arXiv and trending GitHub repos, sends to Telegram channel.
 
+关注频道: [@MusicAIResearch](https://t.me/MusicAIResearch)
+
 ## Setup
 
 ```bash
