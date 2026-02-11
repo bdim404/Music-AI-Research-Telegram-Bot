@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Music AI News Bot every 10 minutes
+Requires=music-ai-news-bot.service
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=10min
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target

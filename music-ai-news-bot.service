@@ -1,0 +1,15 @@
+[Unit]
+Description=Music AI News Bot
+After=network.target
+
+[Service]
+Type=oneshot
+User=your_username
+WorkingDirectory=/path/to/AI-News-Aggregator-Bot
+Environment="PATH=/path/to/AI-News-Aggregator-Bot/venv/bin:/usr/local/bin:/usr/bin:/bin"
+ExecStart=/path/to/AI-News-Aggregator-Bot/venv/bin/python -m src.main
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
