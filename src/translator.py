@@ -9,9 +9,10 @@ def get_openai_client():
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         return None
+    base_url = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1/")
     return OpenAI(
         api_key=api_key,
-        base_url="https://llm-new-api.makelove.expert/v1/"
+        base_url=base_url
     )
 
 def translate_paper_all_in_one(title, abstract):
